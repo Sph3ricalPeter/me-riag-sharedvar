@@ -1,0 +1,2036 @@
+[main] ERROR cz.cvut.fel.dsv.App  - failed to initialize node: [java.rmi/sun.rmi.transport.ObjectTable.putTarget(ObjectTable.java:185), java.rmi/sun.rmi.transport.Transport.exportObject(Transport.java:106), java.rmi/sun.rmi.transport.tcp.TCPTransport.exportObject(TCPTransport.java:254), java.rmi/sun.rmi.transport.tcp.TCPEndpoint.exportObject(TCPEndpoint.java:415), java.rmi/sun.rmi.transport.LiveRef.exportObject(LiveRef.java:147), java.rmi/sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:235), java.rmi/sun.rmi.registry.RegistryImpl.setup(RegistryImpl.java:223), java.rmi/sun.rmi.registry.RegistryImpl.<init>(RegistryImpl.java:208), java.rmi/java.rmi.registry.LocateRegistry.createRegistry(LocateRegistry.java:203), cz.cvut.fel.dsv.SimpleNode.init(SimpleNode.java:44), cz.cvut.fel.dsv.SimpleNode.<init>(SimpleNode.java:29), cz.cvut.fel.dsv.App.main(App.java:16)]
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[main] ERROR cz.cvut.fel.dsv.App  - failed to initialize node: [java.rmi/sun.rmi.transport.ObjectTable.putTarget(ObjectTable.java:185), java.rmi/sun.rmi.transport.Transport.exportObject(Transport.java:106), java.rmi/sun.rmi.transport.tcp.TCPTransport.exportObject(TCPTransport.java:254), java.rmi/sun.rmi.transport.tcp.TCPEndpoint.exportObject(TCPEndpoint.java:415), java.rmi/sun.rmi.transport.LiveRef.exportObject(LiveRef.java:147), java.rmi/sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:235), java.rmi/sun.rmi.registry.RegistryImpl.setup(RegistryImpl.java:223), java.rmi/sun.rmi.registry.RegistryImpl.<init>(RegistryImpl.java:208), java.rmi/java.rmi.registry.LocateRegistry.createRegistry(LocateRegistry.java:203), cz.cvut.fel.dsv.SimpleNode.init(SimpleNode.java:44), cz.cvut.fel.dsv.SimpleNode.<init>(SimpleNode.java:29), cz.cvut.fel.dsv.App.main(App.java:16)]
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[main] ERROR cz.cvut.fel.dsv.App  - failed to initialize node: [java.rmi/sun.rmi.transport.ObjectTable.putTarget(ObjectTable.java:185), java.rmi/sun.rmi.transport.Transport.exportObject(Transport.java:106), java.rmi/sun.rmi.transport.tcp.TCPTransport.exportObject(TCPTransport.java:254), java.rmi/sun.rmi.transport.tcp.TCPEndpoint.exportObject(TCPEndpoint.java:415), java.rmi/sun.rmi.transport.LiveRef.exportObject(LiveRef.java:147), java.rmi/sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:235), java.rmi/sun.rmi.registry.RegistryImpl.setup(RegistryImpl.java:223), java.rmi/sun.rmi.registry.RegistryImpl.<init>(RegistryImpl.java:208), java.rmi/java.rmi.registry.LocateRegistry.createRegistry(LocateRegistry.java:203), cz.cvut.fel.dsv.SimpleNode.init(SimpleNode.java:44), cz.cvut.fel.dsv.SimpleNode.<init>(SimpleNode.java:29), cz.cvut.fel.dsv.App.main(App.java:16)]
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[main] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[main] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[main] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[main] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[main] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[main] ERROR cz.cvut.fel.dsv.App  - failed to initialize node: [java.rmi/sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:346), java.rmi/sun.rmi.transport.tcp.TCPTransport.exportObject(TCPTransport.java:243), java.rmi/sun.rmi.transport.tcp.TCPEndpoint.exportObject(TCPEndpoint.java:415), java.rmi/sun.rmi.transport.LiveRef.exportObject(LiveRef.java:147), java.rmi/sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:235), java.rmi/sun.rmi.registry.RegistryImpl.setup(RegistryImpl.java:223), java.rmi/sun.rmi.registry.RegistryImpl.<init>(RegistryImpl.java:208), java.rmi/java.rmi.registry.LocateRegistry.createRegistry(LocateRegistry.java:203), cz.cvut.fel.dsv.SimpleNode.init(SimpleNode.java:44), cz.cvut.fel.dsv.SimpleNode.<init>(SimpleNode.java:29), cz.cvut.fel.dsv.App.main(App.java:13)]
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[main] ERROR cz.cvut.fel.dsv.App  - failed to initialize node
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.Node (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.Node is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N0: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: class jdk.proxy2.$Proxy4 cannot be cast to class cz.cvut.fel.dsv.SimpleNode (jdk.proxy2.$Proxy4 is in module jdk.proxy2 of loader 'app'; cz.cvut.fel.dsv.SimpleNode is in unnamed module of loader 'app')
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[main] ERROR cz.cvut.fel.dsv.App  - failed to initialize node
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N1: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(4)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 entered critical section
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[RMI TCP Connection(4)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 exited critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 entered critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 exited critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(5)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 entered critical section
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section
+[RMI TCP Connection(5)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[RMI TCP Connection(5)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 exited critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 entered critical section
+[RMI TCP Connection(5)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 exited critical section
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(4)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 entered critical section
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[RMI TCP Connection(4)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 exited critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 entered critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 exited critical section
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(5)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 entered critical section
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section
+[RMI TCP Connection(5)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[RMI TCP Connection(5)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 exited critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 entered critical section
+[RMI TCP Connection(5)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 exited critical section
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(4)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 entered critical section
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section
+[RMI TCP Connection(4)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 exited critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 entered critical section
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 exited critical section
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section
+[RMI TCP Connection(5)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(5)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 entered critical section
+[RMI TCP Connection(5)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section
+[RMI TCP Connection(5)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 exited critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 entered critical section
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 exited critical section
+[RMI TCP Connection(3)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 entered critical section
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N2: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N3: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[Thread-0] WARN  cz.cvut.fel.dsv.SimpleNode  - can't bind N4: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+[RMI TCP Connection(4)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N1 entered critical section
+[RMI TCP Connection(6)-192.168.0.23] INFO  cz.cvut.fel.dsv.SimpleNode  - N0 exited critical section

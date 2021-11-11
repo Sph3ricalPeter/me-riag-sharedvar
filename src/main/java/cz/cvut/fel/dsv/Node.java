@@ -1,25 +1,13 @@
 package cz.cvut.fel.dsv;
 
-import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import java.rmi.NotBoundException;
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 
-import java.rmi.server.UnicastRemoteObject;
+public interface Node extends Remote {
 
-@Slf4j
-@AllArgsConstructor
-public class Node extends UnicastRemoteObject implements Site {
+    void receiveRequest(int ts, int id) throws NotBoundException, RemoteException, InterruptedException;
 
-    private int id;
-    private Timestamp timestamp;
-
-    @Override
-    public void request(Timestamp timestamp) {
-
-    }
-
-    @Override
-    public void reply() {
-
-    }
+    void receiveResponse(int lc, int id) throws NotBoundException, RemoteException, InterruptedException;
 
 }
