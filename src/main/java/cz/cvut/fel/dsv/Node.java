@@ -6,6 +6,10 @@ import java.rmi.RemoteException;
 
 public interface Node extends Remote {
 
+    void signIn(Node node);
+
+    void signOut(Node node);
+
     void receiveRequest(int ts, int id) throws NotBoundException, RemoteException, InterruptedException;
 
     void receiveResponse(int lc, int id) throws NotBoundException, RemoteException, InterruptedException;

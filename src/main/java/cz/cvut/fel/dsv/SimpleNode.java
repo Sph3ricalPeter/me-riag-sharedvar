@@ -1,7 +1,5 @@
 package cz.cvut.fel.dsv;
 
-import lombok.Builder;
-import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 
 import java.rmi.NotBoundException;
@@ -10,18 +8,29 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.Arrays;
+import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.Random;
 
 @Slf4j
-public class SimpleNode extends UnicastRemoteObject implements Node, Runnable {
+public class SimpleNode extends UnicastRemoteObject implements Runnable {
+
+    enum State {
+        Wanted,
+        Held,
+        Released
+    }
 
     private final int id;
     private int lc;
     private int[] rq;
     private int[] ts;
+    private State state;
 
     private Registry registry;
     private Node[] nodes;
+
+    private Queue<Request> requestQueue;
 
     public SimpleNode(int id) throws RemoteException {
         super();
@@ -45,9 +54,10 @@ public class SimpleNode extends UnicastRemoteObject implements Node, Runnable {
         registry.rebind(String.format("N%d", id), this);
 
         nodes = new Node[Config.N_NODES];
+
+        requestQueue = new PriorityQueue<>();
     }
 
-    @Override
     public void receiveRequest(int tsOther, int idOther) throws NotBoundException, RemoteException, InterruptedException {
         discover(idOther);
         updateClock(tsOther);
@@ -58,7 +68,6 @@ public class SimpleNode extends UnicastRemoteObject implements Node, Runnable {
         nodes[idOther].receiveResponse(lc, idOther);
     }
 
-    @Override
     public void receiveResponse(int tsOther, int idOther) throws InterruptedException, RemoteException {
         discover(idOther);
         updateClock(tsOther);
@@ -68,12 +77,14 @@ public class SimpleNode extends UnicastRemoteObject implements Node, Runnable {
         // check if can enter critical section
         for (int i = 0; i < Config.N_NODES; ++i) {
             if (id == idOther) {
+                log.info("skipping self");
                 continue;
             }
 
             // at least one node has not responded
             if (rq[id] >= rq[idOther] || rq[id] >= ts[idOther]) {
-                return;
+                log.info("response is old");
+                continue;
             }
         }
 
