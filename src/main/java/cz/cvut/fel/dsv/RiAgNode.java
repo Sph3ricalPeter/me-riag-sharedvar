@@ -8,11 +8,12 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
-public class RiAgNode implements Node, Runnable {
+public class RiAgNode extends UnicastRemoteObject implements Node {
 
     private String ip;
     private int port;
@@ -25,12 +26,14 @@ public class RiAgNode implements Node, Runnable {
     private Registry registry;
 
     // create node without contacting gateway - create new network
-    public RiAgNode() {
+    public RiAgNode() throws RemoteException, UnknownHostException {
+        super();
         init();
     }
 
     // create node with known gateway to the existing network
-    public RiAgNode(String gatewayIP, int gatewayPort) {
+    public RiAgNode(String gatewayIP, int gatewayPort) throws RemoteException, UnknownHostException {
+        super();
         init();
 
         // find gateway node to fetch network info from
@@ -38,21 +41,17 @@ public class RiAgNode implements Node, Runnable {
             var gatewayRegistry = LocateRegistry.getRegistry(gatewayIP, gatewayPort);
             Node gateway = (Node) gatewayRegistry.lookup(String.format("%s:%d", gatewayIP, gatewayPort));
             gateway.signIn(this);
+            log.info("signed in to gateway");
         } catch (RemoteException | NotBoundException e) {
-            log.error("error contacting gateway registry");
+            log.error("error contacting gateway registry at {}:{}, exception: {}", gatewayIP, gatewayPort, e);
         }
     }
 
-    private void init() {
+    private void init() throws UnknownHostException {
+        ip = InetAddress.getLocalHost().getHostAddress();
         port = Config.REGISTRY_PORT;
 
-        // get local ip address
-        try {
-            ip = InetAddress.getLocalHost().getHostAddress();
-            log.info("new node: {}:{}", ip, port);
-        } catch (UnknownHostException e) {
-            log.error("error getting local ip address");
-        }
+        log.info("new node: {}:{}", ip, port);
 
         // register node as remote object on given port
         try {
@@ -65,7 +64,7 @@ public class RiAgNode implements Node, Runnable {
     }
 
     @Override
-    public void signIn(Node newNode) {
+    public void signIn(Node newNode) throws RemoteException {
         // skip if known
         if (network.contains(newNode)) {
             log.info("node is already in the network");
@@ -81,7 +80,7 @@ public class RiAgNode implements Node, Runnable {
     }
 
     @Override
-    public void signOut(Node newNode) {
+    public void signOut(Node newNode) throws RemoteException {
         // skip if now known
         if (!network.contains(newNode)) {
             log.info("node is removed already");
@@ -106,7 +105,7 @@ public class RiAgNode implements Node, Runnable {
 
     }
 
-    @Override
+    /*@Override
     public void run() {
         while (true) {
             try {
@@ -115,5 +114,5 @@ public class RiAgNode implements Node, Runnable {
                 log.info("sleeping error");
             }
         }
-    }
+    }*/
 }
