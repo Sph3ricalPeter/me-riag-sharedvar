@@ -6,9 +6,10 @@ import lombok.extern.slf4j.Slf4j;
 public class App {
     public static void main(String[] args) {
         try {
-            Node node = args.length < 1 ? new RiAgNode() : new RiAgNode(args[0], Integer.parseInt(args[1]));
+            var thread = new Thread(args.length < 1 ? new NodeImpl() : new NodeImpl(new ID(args[0], Integer.parseInt(args[1]))));
+            thread.start();
         } catch (Exception e) {
-            log.error(e.getMessage());
+            log.error("failed to start node", e);
         }
     }
 }
