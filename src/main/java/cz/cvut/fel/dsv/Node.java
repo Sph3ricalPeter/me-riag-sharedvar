@@ -3,19 +3,20 @@ package cz.cvut.fel.dsv;
 import java.io.Serializable;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.util.HashSet;
 
 public interface Node extends Remote, Serializable {
 
-    ID getIdentifier() throws RemoteException;
+    int addNode(String ip, int port) throws RemoteException;
 
-    int signIn(ID id) throws RemoteException;
+    void removeNode(ID id) throws RemoteException;
 
-    void signOut(ID id) throws RemoteException;
+    void updateRemotes(HashSet<ID> remotes) throws RemoteException;
 
     void receiveRequest(Request request) throws RemoteException;
 
     void receiveResponse(Response response) throws RemoteException;
 
-    void receivePayload(Integer payload) throws RemoteException;
+    void updateVariable(Integer payload) throws RemoteException;
 
 }

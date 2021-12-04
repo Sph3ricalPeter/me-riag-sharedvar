@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Getter
 public class Request implements Serializable {
 
-    private final int fromClock;
-    private final String identifier;
+    private final int senderClock;
+    private final ID senderId;
 
 }

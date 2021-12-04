@@ -1,18 +1,35 @@
 package cz.cvut.fel.dsv;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Objects;
 
-@AllArgsConstructor
 @Getter
-public class ID implements Serializable, Comparable<Integer> {
+public class ID implements Serializable, Comparable<ID> {
 
-    private final Integer n;
     private final String ip;
     private final int port;
+
+    @Setter
+    private Integer n;
+
+    public ID(String ip, int port) {
+        this.ip = ip;
+        this.port = port;
+        n = null;
+    }
+
+    public ID(String ip, int port, int n) {
+        this.ip = ip;
+        this.port = port;
+        this.n = n;
+    }
+
+    public String getName() {
+        return String.format("%s:%d", ip, port);
+    }
 
     @Override
     public String toString() {
@@ -24,16 +41,16 @@ public class ID implements Serializable, Comparable<Integer> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ID id = (ID) o;
-        return port == id.port && Objects.equals(n, id.n) && Objects.equals(ip, id.ip);
+        return port == id.port && Objects.equals(ip, id.ip); // only equals on ip and port
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(n, ip, port);
+        return Objects.hash(ip, port); // only hash IP and port
     }
 
     @Override
-    public int compareTo(Integer o) {
-        return n.compareTo(o);
+    public int compareTo(ID o) {
+        return n.compareTo(o.getN());
     }
 }

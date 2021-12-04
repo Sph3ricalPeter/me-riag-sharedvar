@@ -10,154 +10,186 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Slf4j
 public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
 
     public enum State {
-        WANTED,
+        REQUESTING,
         HELD,
         RELEASED
     }
 
-    private ID id;
+    private ID myId;
 
     private int myClock;
-    private int maxClock;
-    private int respCount;
+    private int clockMax;
+    private int responseCount;
     private State state;
+    private Registry myRegistry;
 
     private volatile Integer requestedVariable;
     private Integer sharedVariable;
 
-    private final Map<ID, Node> remotes = new TreeMap<>();
-    private final List<Boolean> reqs = new ArrayList<>();
-    private Registry registry;
+    private int nMax;
+    private final TreeMap<ID, Node> remotes = new TreeMap<>();
+    private final TreeMap<ID, Boolean> remotesReqFlags = new TreeMap<>();
 
     // create node without contacting gateway - create new network
     public NodeImpl() throws RemoteException, UnknownHostException {
         super();
-        init(1);
+        init();
     }
 
     // create node with known gateway to the existing network
-    public NodeImpl(ID gatewayID) throws RemoteException, UnknownHostException {
+    public NodeImpl(String gatewayIp, int gatewayPort) throws RemoteException, UnknownHostException {
         super();
+        init();
 
         // find gateway node to fetch network info from
-        try {
-            var gatewayRegistry = LocateRegistry.getRegistry(gatewayID.getIp(), gatewayID.getPort());
-            Node gateway = (Node) gatewayRegistry.lookup(gatewayID.toString());
-            init(gateway.signIn(gatewayID));
-            log.info("signed in to gateway");
-        } catch (RemoteException | NotBoundException e) {
-            log.error("error contacting gateway registry at {}", gatewayID, e);
+        Node gateway = tryLocateRemoteNode(new ID(gatewayIp, gatewayPort));
+        if (Objects.isNull(gateway))
+            return;
+
+        nMax = gateway.addNode(myId.getIp(), myId.getPort());
+        if (nMax < 0) {
+            log.error("failed getting node number");
+            return;
         }
+
+        myId.setN(nMax);
+        log.info("signed in to gateway and got nMax={}", nMax);
     }
 
-    private void init(int n) throws UnknownHostException {
-        id = new ID(n, InetAddress.getLocalHost().getHostAddress(), Config.REGISTRY_PORT);
-
-        log.info("new node: {}", id);
+    private void init() throws UnknownHostException {
+        nMax = 1;
+        myId = new ID(InetAddress.getLocalHost().getHostAddress(), Config.REGISTRY_PORT, nMax);
+        log.info("new node: {}", myId);
 
         // register node as remote object on given port
         try {
-            registry = LocateRegistry.createRegistry(id.getPort());
-            registry.rebind(id.toString(), this);
-            log.info("created registry on port: {}", id.getPort());
+            myRegistry = LocateRegistry.createRegistry(myId.getPort());
+            myRegistry.rebind(myId.getName(), this);
+            log.info("created registry on port: {}", myId.getPort());
         } catch (RemoteException e) {
             log.error("error creating registry");
+            return;
         }
 
         // init algo
-        maxClock = 0;
+        clockMax = 0;
         myClock = 0;
         state = State.RELEASED;
 
         log.info("initialized {}", this);
     }
 
-    public ID getIdentifier() {
-        return id;
-    }
-
+    /**
+     * Adds a node to the remote node and its neighbors
+     * @param newNodeIp ip of new node
+     * @param newNodePort port of new node
+     * @return number of the node being added, -1 if error occurs
+     * @throws RemoteException
+     */
     @Override
-    public int signIn(ID id) throws RemoteException {
-        Node newNode;
-        try {
-            var gatewayRegistry = LocateRegistry.getRegistry(id.getIp(), id.getPort());
-            newNode = (Node) gatewayRegistry.lookup(id.toString());
-        } catch (RemoteException | NotBoundException e) {
-            log.error("error contacting registry at {}", id, e);
-            return -1;
-        }
+    public int addNode(String newNodeIp, int newNodePort) throws RemoteException {
+        nMax += 1;
+        final var newNodeId = new ID(newNodeIp, newNodePort, nMax);
 
         // skip if known
-        if (remotes.containsKey(id)) {
-            log.info("node is already in the network");
+        if (remotes.containsKey(newNodeId)) {
+            log.info("node {} is already in the network", newNodeId);
             return -1;
         }
 
-        // add node to all remotes except the one that's signing in
-        for (Node node : remotes.values()) {
-            node.signIn(id);
+        Node newNode = tryLocateRemoteNode(newNodeId);
+        if (Objects.isNull(newNode))
+            return -1;
+
+        // add new node to remotes
+        remotes.put(newNodeId, newNode);
+        remotesReqFlags.put(newNodeId, false);
+        log.info("added {} to the network", newNodeId);
+
+        // multicast updated remotes set to all remotes including the new node
+        final var idSet = new HashSet<>(remotes.keySet());
+        idSet.add(myId); // include this node
+        for (Node remote : remotes.values()) {
+            remote.updateRemotes(idSet);
         }
 
-        remotes.put(id, newNode);
-        reqs.add(false);
-        log.info("added {} to the network", newNode);
-
         log.info("{}", this);
-        return remotes.size();
+        return nMax;
     }
 
     @Override
-    public void signOut(ID id) throws RemoteException {
-        if (!remotes.containsKey(id)) {
+    public void removeNode(ID nodeId) throws RemoteException {
+        if (!remotes.containsKey(nodeId)) {
             log.info("node is removed already");
             return;
         }
 
-        remotes.remove(id);
-        log.info("removed {} from the network", id);
+        remotes.remove(nodeId);
+        remotesReqFlags.remove(nodeId);
+        log.info("removed {} from the network", nodeId);
 
-        for (Node node : remotes.values()) {
-            node.signOut(id);
+        var idSet = new HashSet<>(remotes.keySet());
+        for (Node remote : remotes.values()) {
+            remote.updateRemotes(idSet);
         }
         log.info("{}", this);
     }
 
     @Override
+    public void updateRemotes(HashSet<ID> updatedRemotes) throws RemoteException {
+        // add new records from updated remotes
+        for (ID newRemoteId : updatedRemotes) {
+            if (remotes.containsKey(newRemoteId) || newRemoteId.equals(myId)) // skip existing or myself
+                continue;
+
+            final var newNode  = tryLocateRemoteNode(newRemoteId);
+            if (Objects.isNull(newNode))
+                continue;
+
+            remotes.put(newRemoteId, newNode);
+            remotesReqFlags.put(newRemoteId, false);
+        }
+
+        // remove old remotes
+        for (ID remoteId : remotes.keySet()) {
+            if (updatedRemotes.contains(remoteId))
+                continue;
+
+            remotes.remove(remoteId);
+            remotesReqFlags.remove(remoteId);
+        }
+        log.info("updated remotes list {}", this);
+    }
+
+    @Override
     public void receiveRequest(Request request) throws RemoteException {
-        maxClock = Math.max(maxClock, request.getFromClock());
+        clockMax = Math.max(clockMax, request.getSenderClock());
 
-        Node remoteNode = remotes.stream().filter(node -> {
-            try {
-                return node.getIdentifier().equals(fromIdentifier);
-            } catch (RemoteException e) {
-                log.error("cant get identifier", e);
-            }
-            return false;
-        }).collect(Collectors.toList()).get(0);
-        final var nodeId = remotes.indexOf(remoteNode);
+        final var isReqClockAhead = request.getSenderClock() > myClock;
+        final var isClockSameAndReqNumHigher = (request.getSenderClock() == myClock && request.getSenderId().getN() > myId.getN());
 
-        final var delay = reqs.get(id.getN()) && (request.getFromClock() > myClock || request.getFromClock() == myClock && nodeId > myId);
+        final var delay = state.equals(State.REQUESTING) && (isReqClockAhead || isClockSameAndReqNumHigher);
 
         if (delay) {
-            reqs.set(nodeId, true);
+            remotesReqFlags.put(request.getSenderId(), true);
             log.info("received request and waiting ...");
-        } else {
-            remotes.get(nodeId).receiveResponse(new Response());
-            log.info("received request and responding empty ...");
+            return;
         }
+
+        remotes.get(request.getSenderId()).receiveResponse(new Response());
+        log.info("received request and responding empty ...");
     }
 
     @Override
     public void receiveResponse(Response response) throws RemoteException {
-        respCount++;
+        responseCount++;
 
-        if (respCount < remotes.size() - 1)
+        if (responseCount < remotes.size())
             return;
 
         // received all responses needed to enter critical section
@@ -180,22 +212,18 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         state = State.RELEASED;
         log.info("RELEASED and replying to requests ...");
 
-        final var i = remotes.indexOf(this);
-        for (var j = 0; j < remotes.size(); ++j) {
-            if (i == j)
-                continue;
+        for (ID remoteId : remotes.keySet()) {
+            remotes.get(remoteId).updateVariable(sharedVariable);
 
-            remotes.get(j).receivePayload(sharedVariable);
-
-            if (reqs.get(j)) {
-                reqs.set(j, false);
-                remotes.get(j).receiveResponse(new Response(sharedVariable));
+            if (remotesReqFlags.get(remoteId)) {
+                remotesReqFlags.replace(remoteId, false);
+                remotes.get(remoteId).receiveResponse(new Response());
             }
         }
     }
 
     @Override
-    public void receivePayload(Integer payload) {
+    public void updateVariable(Integer payload) {
         sharedVariable = payload;
     }
 
@@ -213,11 +241,12 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
                     continue;
                 case "exit":
                     try {
-                        remotes.get(0).signOut(this);
+                        // tell any node to remove this node
+                        remotes.get(remotes.keySet().iterator().next()).removeNode(myId);
                     } catch (RemoteException e) {
                         log.error("failed to sign out", e);
                     }
-                    continue;
+                    System.exit(0);
                 default:
                     break;
             }
@@ -229,17 +258,17 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
             }
 
             // change state to wanted, request access to critical section
-            state = State.WANTED;
+            state = State.REQUESTING;
             log.info("WANTED and requesting access ...");
 
-            myClock++;
+            myClock = clockMax + 1;
 
-            respCount = 0;
-            for (var j = 0; j < remotes.size(); ++j) {
+            responseCount = 0;
+            for (ID remoteId : remotes.keySet()) {
                 try {
-                    remotes.get(j).receiveRequest(new Request(myClock, ip, port));
+                    remotes.get(remoteId).receiveRequest(new Request(myClock, myId));
                 } catch (RemoteException e) {
-                    log.error("failed request to node {}", j, e);
+                    log.error("failed request to node {}", remoteId, e);
                 }
             }
         }
@@ -250,16 +279,24 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         var builder = new StringBuilder();
 
         // print in format: 192.168.56.101:2010 - 2 peers: [192.168.56.102:2010, 192.168.56.103:2013]
-        builder.append(String.format("%s - %d peers: [", getIdentifier(ip, port), remotes.size() - 1));
-        for (var j = 0; j < remotes.size(); ++j) {
-            try {
-                builder.append(String.format(j == remotes.size() - 1 ? "%s" : "%s, ", remotes.get(j).getIdentifier()));
-            } catch (RemoteException e) {
-                log.error("can't get identifier for node {}", j);
-            }
+        builder.append(String.format("%s | var=%d | %d peers: [", myId, sharedVariable, remotes.size()));
+        for (Iterator<ID> it = remotes.keySet().iterator(); it.hasNext(); ) {
+            ID remoteId = it.next();
+            builder.append(String.format(it.hasNext() ? "%s, " : "%s", remoteId));
         }
         builder.append("]");
 
         return builder.toString();
+    }
+
+    private Node tryLocateRemoteNode(ID id) {
+        Node remoteNode = null;
+        try {
+            final var remoteRegistry = LocateRegistry.getRegistry(id.getIp(), id.getPort());
+            remoteNode = (Node) remoteRegistry.lookup(id.getName());
+        } catch (RemoteException | NotBoundException e) {
+            log.error("error contacting registry at {}", id.getName(), e);
+        }
+        return remoteNode;
     }
 }
