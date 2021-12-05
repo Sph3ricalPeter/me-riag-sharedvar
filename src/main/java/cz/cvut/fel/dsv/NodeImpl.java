@@ -168,6 +168,14 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
 
     @Override
     public void receiveRequest(Request request) throws RemoteException {
+        try {
+            final var sleepTime = 3_000;
+            log.info("receiving request takes {} ...", sleepTime);
+            Thread.sleep(sleepTime);
+        } catch (InterruptedException e) {
+            log.error("failed sleeping ...", e);
+        }
+
         clockMax = Math.max(clockMax, request.getSenderClock());
 
         final var isReqClockAhead = request.getSenderClock() > myClock;
@@ -175,14 +183,16 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
 
         final var delay = state.equals(State.REQUESTING) && (isReqClockAhead || isClockSameAndReqNumHigher);
 
+        log.info("delay = state={} && (isReqClockAhead={} || isClockSameAndReqNumHigher={}", state, isReqClockAhead, isClockSameAndReqNumHigher);
+
         if (delay) {
             remotesReqFlags.put(request.getSenderId(), true);
-            log.info("received request and waiting ...");
+            log.info("{} received request and waiting ...", strclk());
             return;
         }
 
         remotes.get(request.getSenderId()).receiveResponse(new Response());
-        log.info("received request and responding empty ...");
+        log.info("{} received request and responding empty ...", strclk());
     }
 
     @Override
@@ -196,7 +206,7 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         // CRITICAL SECTION
         state = State.HELD;
 
-        log.info("HELD and changing variable {} to {} ...", sharedVariable, requestedVariable);
+        log.info("{} HELD and changing variable {} to {} ...", strclk(), sharedVariable, requestedVariable);
         synchronized (this) {
             sharedVariable = requestedVariable;
         }
@@ -210,7 +220,7 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         }
 
         state = State.RELEASED;
-        log.info("RELEASED and replying to requests ...");
+        log.info("{} RELEASED and replying to requests ...", strclk());
 
         for (ID remoteId : remotes.keySet()) {
             remotes.get(remoteId).updateVariable(sharedVariable);
@@ -234,18 +244,40 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         while (true) {
             // get input from command line
             final var line = scanner.nextLine();
+            final var args = line.split(" ");
 
-            switch (line) {
+            switch (args[0]) {
                 case "print":
                     log.info(this.toString());
                     continue;
-                case "exit":
+                case "logout":
+                    if (remotes.size() < 1) {
+                        log.warn("can't log out, this is only node in the network");
+                        continue;
+                    }
                     try {
                         // tell any node to remove this node
                         remotes.get(remotes.keySet().iterator().next()).removeNode(myId);
                     } catch (RemoteException e) {
                         log.error("failed to sign out", e);
                     }
+                    remotes.clear();
+                    remotesReqFlags.clear();
+                    continue;
+                case "login":
+                    if (args.length < 3) {
+                        log.warn("invalid arguments");
+                        continue;
+                    }
+                    try {
+                        final var gateway = tryLocateRemoteNode(new ID(args[1], Integer.parseInt(args[2])));
+                        nMax = gateway.addNode(myId.getIp(), myId.getPort());
+                        myId.setN(nMax);
+                    } catch (RemoteException e) {
+                        log.error("failed to log in", e);
+                    }
+                    continue;
+                case "exit":
                     System.exit(0);
                 default:
                     break;
@@ -255,13 +287,15 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
                 requestedVariable = Integer.parseInt(line);
             } catch (NumberFormatException e) {
                 log.error("failed to parse input string to int", e);
+                return;
             }
 
             // change state to wanted, request access to critical section
             state = State.REQUESTING;
-            log.info("WANTED and requesting access ...");
-
             myClock = clockMax + 1;
+
+            log.info("{} WANTED and requesting access ...", strclk());
+
 
             responseCount = 0;
             for (ID remoteId : remotes.keySet()) {
@@ -279,14 +313,18 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         var builder = new StringBuilder();
 
         // print in format: 192.168.56.101:2010 - 2 peers: [192.168.56.102:2010, 192.168.56.103:2013]
-        builder.append(String.format("%s | var=%d | %d peers: [", myId, sharedVariable, remotes.size()));
+        builder.append(String.format("%s %s | var=%d | %d peers: {", strclk(), myId, sharedVariable, remotes.size()));
         for (Iterator<ID> it = remotes.keySet().iterator(); it.hasNext(); ) {
             ID remoteId = it.next();
             builder.append(String.format(it.hasNext() ? "%s, " : "%s", remoteId));
         }
-        builder.append("]");
+        builder.append("}");
 
         return builder.toString();
+    }
+
+    private String strclk() {
+        return String.format("[clK:%s", myClock);
     }
 
     private Node tryLocateRemoteNode(ID id) {
