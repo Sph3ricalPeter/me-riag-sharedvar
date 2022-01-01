@@ -47,13 +47,13 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         init();
 
         // find gateway node to fetch network info from
-        Node gateway = tryLocateRemoteNode(new ID(gatewayIp, gatewayPort));
-        if (Objects.isNull(gateway))
+        var gateway = tryLocateRemoteNode(new ID(gatewayIp, gatewayPort));
+        if (gateway.isEmpty())
             return;
 
-        nMax = gateway.addNode(myId.getIp(), myId.getPort());
+        nMax = gateway.get().addNode(myId.getIp(), myId.getPort());
         if (nMax < 0) {
-            log.error("failed getting node number");
+            log.error("rejected by gateway");
             return;
         }
 
@@ -84,9 +84,15 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         log.info("initialized {}", this);
     }
 
+    @Override
+    public void receivePoke() throws RemoteException {
+        log.debug("received a poke, I'm still here");
+    }
+
     /**
      * Adds a node to the remote node and its neighbors
-     * @param newNodeIp ip of new node
+     *
+     * @param newNodeIp   ip of new node
      * @param newNodePort port of new node
      * @return number of the node being added, -1 if error occurs
      * @throws RemoteException
@@ -97,17 +103,17 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         final var newNodeId = new ID(newNodeIp, newNodePort, nMax);
 
         // skip if known
-        if (remotes.containsKey(newNodeId)) {
+        if (hasRemote(newNodeId)) {
             log.info("node {} is already in the network", newNodeId);
             return -1;
         }
 
-        Node newNode = tryLocateRemoteNode(newNodeId);
-        if (Objects.isNull(newNode))
+        var newNode = tryLocateRemoteNode(newNodeId);
+        if (newNode.isEmpty())
             return -1;
 
         // add new node to remotes
-        remotes.put(newNodeId, newNode);
+        remotes.put(newNodeId, newNode.get());
         remotesReqFlags.put(newNodeId, false);
         log.info("added {} to the network", newNodeId);
 
@@ -124,7 +130,7 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
 
     @Override
     public void removeNode(ID nodeId) throws RemoteException {
-        if (!remotes.containsKey(nodeId)) {
+        if (!hasRemote(nodeId)) {
             log.info("node is removed already");
             return;
         }
@@ -144,14 +150,14 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
     public void updateRemotes(HashSet<ID> updatedRemotes) throws RemoteException {
         // add new records from updated remotes
         for (ID newRemoteId : updatedRemotes) {
-            if (remotes.containsKey(newRemoteId) || newRemoteId.equals(myId)) // skip existing or myself
+            if (hasRemote(newRemoteId) || newRemoteId.equals(myId)) // skip existing or myself
                 continue;
 
-            final var newNode  = tryLocateRemoteNode(newRemoteId);
-            if (Objects.isNull(newNode))
+            final var newNode = tryLocateRemoteNode(newRemoteId);
+            if (newNode.isEmpty())
                 continue;
 
-            remotes.put(newRemoteId, newNode);
+            remotes.put(newRemoteId, newNode.get());
             remotesReqFlags.put(newRemoteId, false);
         }
 
@@ -191,8 +197,8 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
             return;
         }
 
-        remotes.get(request.getSenderId()).receiveResponse(new Response());
-        log.info("{} received request and responding empty ...", strclk());
+        var responseSent = sendResponse(request.getSenderId(), new Response());
+        log.info("{} received request and responseSent={} ...", strclk(), responseSent);
     }
 
     @Override
@@ -255,11 +261,22 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
                         log.warn("can't log out, this is only node in the network");
                         continue;
                     }
-                    try {
-                        // tell any node to remove this node
-                        remotes.get(remotes.keySet().iterator().next()).removeNode(myId);
-                    } catch (RemoteException e) {
-                        log.error("failed to sign out", e);
+                    // find any remote that can remove me
+                    var foundAndRemoved = false;
+                    for (ID id : remotes.keySet()) {
+                        var node = tryGetRemoteOrRemoveInactive(id);
+                        if (node.isPresent()) {
+                            try {
+                                node.get().removeNode(myId);
+                                foundAndRemoved = true;
+                            } catch (RemoteException e) {
+                                log.error("failed to sign out", e);
+                            }
+                            break;
+                        }
+                    }
+                    if (!foundAndRemoved) {
+                        log.info("there's no peer to sign out from or removal failed, just leaving ...");
                     }
                     remotes.clear();
                     remotesReqFlags.clear();
@@ -269,12 +286,16 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
                         log.warn("invalid arguments");
                         continue;
                     }
+                    final var gateway = tryLocateRemoteNode(new ID(args[1], Integer.parseInt(args[2])));
+                    if (gateway.isEmpty()) {
+                        return;
+                    }
+
                     try {
-                        final var gateway = tryLocateRemoteNode(new ID(args[1], Integer.parseInt(args[2])));
-                        nMax = gateway.addNode(myId.getIp(), myId.getPort());
+                        nMax = gateway.get().addNode(myId.getIp(), myId.getPort());
                         myId.setN(nMax);
                     } catch (RemoteException e) {
-                        log.error("failed to log in", e);
+                        log.error("failed to add this node");
                     }
                     continue;
                 case "exit":
@@ -296,13 +317,25 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
 
             log.info("{} WANTED and requesting access ...", strclk());
 
+            // TODO: add timeout
 
             responseCount = 0;
+
+            // more than one remote, wait for responses
             for (ID remoteId : remotes.keySet()) {
+                var requestSuccess = sendRequest(remoteId, new Request(myClock, myId));
+                log.info("sent request to {} success={}", remoteId, requestSuccess);
+            }
+
+            // no remotes, respond to self to ender CS
+            // check happens here, because first receiveRequest needs to fail in order for the non-existent node
+            // to be removed
+            if (remotes.size() < 1) {
+                log.info("no peers in the network, self-requesting CS ...");
                 try {
-                    remotes.get(remoteId).receiveRequest(new Request(myClock, myId));
+                    receiveResponse(new Response());
                 } catch (RemoteException e) {
-                    log.error("failed request to node {}", remoteId, e);
+                    log.error("can't receive self-response");
                 }
             }
         }
@@ -323,18 +356,86 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         return builder.toString();
     }
 
-    private String strclk() {
-        return String.format("[clK:%s", myClock);
+    private boolean sendRequest(ID remoteId, Request request) {
+        try {
+            Optional<Node> remote = tryGetRemoteOrRemoveInactive(remoteId);
+            if (remote.isEmpty()) {
+                return false;
+            }
+            remote.get().receiveRequest(request);
+        } catch (RemoteException e) {
+            log.error("failed to send request to node {}", remoteId, e);
+            return false;
+        }
+        return true;
     }
 
-    private Node tryLocateRemoteNode(ID id) {
-        Node remoteNode = null;
+    private boolean sendResponse(ID remoteId, Response response) {
+        try {
+            Optional<Node> remote = tryGetRemoteOrRemoveInactive(remoteId);
+            if (remote.isEmpty()) {
+                return false;
+            }
+            remote.get().receiveResponse(response);
+        } catch (RemoteException e) {
+            log.error("failed to send response to node {}", remoteId, e);
+            return false;
+        }
+        return true;
+    }
+
+    private Optional<Node> tryLocateRemoteNode(ID id) {
         try {
             final var remoteRegistry = LocateRegistry.getRegistry(id.getIp(), id.getPort());
-            remoteNode = (Node) remoteRegistry.lookup(id.getName());
+            return Optional.of((Node) remoteRegistry.lookup(id.getName()));
         } catch (RemoteException | NotBoundException e) {
             log.error("error contacting registry at {}", id.getName(), e);
         }
-        return remoteNode;
+        return Optional.empty();
+    }
+
+    // returns node only if its in remotes and is poke-able
+    private Optional<Node> tryGetRemoteOrRemoveInactive(ID remoteId) {
+        if (!isActiveElseTryRemove(remoteId)) {
+            return Optional.empty();
+        }
+        return Optional.of(remotes.get(remoteId));
+    }
+
+    private boolean isActiveElseTryRemove(ID remoteId) {
+        try {
+            // poke node to see if it's still there
+            remotes.get(remoteId).receivePoke();
+            return true;
+        } catch (RemoteException e) {
+            // it's not
+            log.warn("node {} is not active", remoteId);
+        }
+
+        try {
+            // try to remove it
+            removeNode(remoteId);
+        } catch (RemoteException e) {
+            // can't remove, sigh ...
+            log.error("failed to remove inactive node {}", remoteId);
+        }
+
+        // remote is not poke-able, so it's technically not there...
+        return false;
+    }
+
+    // returns true if node with given remoteId is in remotes and is poke-able
+    private boolean hasRemote(ID remoteId) {
+        for (ID id : remotes.keySet()) {
+            if (id.equals(remoteId)) {
+                return true;
+            }
+        }
+        // it's not even in remotes, lol
+        return false;
+    }
+
+    private String strclk() {
+        return String.format("[clK:%s", myClock);
     }
 }

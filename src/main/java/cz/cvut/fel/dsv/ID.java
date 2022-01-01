@@ -41,7 +41,7 @@ public class ID implements Serializable, Comparable<ID> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ID id = (ID) o;
-        return port == id.port && Objects.equals(ip, id.ip); // only equals on ip and port
+        return port == id.port && ip.equals(id.ip); // only equals on ip and port
     }
 
     @Override
