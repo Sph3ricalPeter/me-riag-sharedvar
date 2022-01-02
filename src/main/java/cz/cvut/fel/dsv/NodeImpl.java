@@ -175,8 +175,8 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
     @Override
     public void receiveRequest(Request request) throws RemoteException {
         try {
-            final var sleepTime = 3_000;
-            log.info("receiving request takes {} ...", sleepTime);
+            final var sleepTime = Utils.getRandomLong(Config.REMOTE_CALL_DELAY_MIN_MS, Config.REMOTE_CALL_DELAY_MAX_MS);
+            log.debug("receiving request takes {} ...", sleepTime);
             Thread.sleep(sleepTime);
         } catch (InterruptedException e) {
             log.error("failed sleeping ...", e);
@@ -184,13 +184,15 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
 
         clockMax = Math.max(clockMax, request.getSenderClock());
 
-        final var isReqClockAhead = request.getSenderClock() > myClock;
+        final var isBusy = !state.equals(State.RELEASED);
+        final var isIncomingClockAhead = request.getSenderClock() > myClock;
         final var isClockSameAndReqNumHigher = (request.getSenderClock() == myClock && request.getSenderId().getN() > myId.getN());
 
-        final var delay = state.equals(State.REQUESTING) && (isReqClockAhead || isClockSameAndReqNumHigher);
+        final var delay = isBusy && (isIncomingClockAhead || isClockSameAndReqNumHigher);
 
-        log.info("delay = state={} && (isReqClockAhead={} || isClockSameAndReqNumHigher={}", state, isReqClockAhead, isClockSameAndReqNumHigher);
+        log.debug("delay = stateEqualsRequesting={} && (isReqClockAhead={} || isClockSameAndReqNumHigher={}", state.equals(State.REQUESTING), isIncomingClockAhead, isClockSameAndReqNumHigher);
 
+        // delay response until not busy, response happens after critical section
         if (delay) {
             remotesReqFlags.put(request.getSenderId(), true);
             log.info("{} received request and waiting ...", strclk());
@@ -198,7 +200,7 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         }
 
         var responseSent = sendResponse(request.getSenderId(), new Response());
-        log.info("{} received request and responseSent={} ...", strclk(), responseSent);
+        log.info("At {} received request from {}", strclk(), request.getSenderId());
     }
 
     @Override
@@ -229,11 +231,16 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         log.info("{} RELEASED and replying to requests ...", strclk());
 
         for (ID remoteId : remotes.keySet()) {
-            remotes.get(remoteId).updateVariable(sharedVariable);
+            var node = tryGetRemoteOrRemoveInactive(remoteId);
+            if (node.isEmpty())
+                continue;
 
+            node.get().updateVariable(sharedVariable);
+
+            // reply to requests
             if (remotesReqFlags.get(remoteId)) {
                 remotesReqFlags.replace(remoteId, false);
-                remotes.get(remoteId).receiveResponse(new Response());
+                node.get().receiveResponse(new Response());
             }
         }
     }
@@ -304,6 +311,11 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
                     break;
             }
 
+            if (state == State.REQUESTING || state == State.HELD) {
+                log.warn("can't request while requesting or while in CS...");
+                continue;
+            }
+
             try {
                 requestedVariable = Integer.parseInt(line);
             } catch (NumberFormatException e) {
@@ -322,6 +334,7 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
             responseCount = 0;
 
             // more than one remote, wait for responses
+            // TODO: this needs to happen async, currently the 2nd remote waits until the 1st one finishes receiving request
             for (ID remoteId : remotes.keySet()) {
                 var requestSuccess = sendRequest(remoteId, new Request(myClock, myId));
                 log.info("sent request to {} success={}", remoteId, requestSuccess);
