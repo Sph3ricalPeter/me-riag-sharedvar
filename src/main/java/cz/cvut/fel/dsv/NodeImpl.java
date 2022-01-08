@@ -140,6 +140,9 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         log.info("removed {} from the network", nodeId);
 
         var idSet = new HashSet<>(remotes.keySet());
+        for (ID id : idSet) {
+            log.info("idset val: {}", id);
+        }
         for (Node remote : remotes.values()) {
             remote.updateRemotes(idSet);
         }
@@ -162,12 +165,22 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         }
 
         // remove old remotes
-        for (ID remoteId : remotes.keySet()) {
+        /*var it = remotes.keySet().iterator();
+        while (it.hasNext()) {
+            var remoteId = it.next();*/
+
+        for (ID id : updatedRemotes) {
+            log.info("updated remote: {}", id);
+        }
+
+        var copy = new HashSet<>(remotes.keySet());
+        for (ID remoteId : copy) {
             if (updatedRemotes.contains(remoteId))
                 continue;
 
             remotes.remove(remoteId);
             remotesReqFlags.remove(remoteId);
+            log.info("removed {} from remotes", remoteId);
         }
         log.info("updated remotes list {}", this);
     }
@@ -230,7 +243,8 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         state = State.RELEASED;
         log.info("{} RELEASED and replying to requests ...", strclk());
 
-        for (ID remoteId : remotes.keySet()) {
+        var copy = new HashSet<>(remotes.keySet());
+        for (ID remoteId : copy) {
             var node = tryGetRemoteOrRemoveInactive(remoteId);
             if (node.isEmpty())
                 continue;
@@ -329,14 +343,19 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
 
             log.info("{} WANTED and requesting access ...", strclk());
 
-            // TODO: add timeout
-
             responseCount = 0;
 
             // more than one remote, wait for responses
-            // TODO: this needs to happen async, currently the 2nd remote waits until the 1st one finishes receiving request
-            for (ID remoteId : remotes.keySet()) {
+            /*var it = remotes.keySet().iterator();
+            while (it.hasNext()) {
+                var remoteId = it.next();*/
+            var copy = new HashSet<>(remotes.keySet());
+            for (ID remoteId : copy) {
                 var requestSuccess = sendRequest(remoteId, new Request(myClock, myId));
+                log.info(this.toString());
+                if (!requestSuccess) {
+                    sendResponse(myId, new Response());
+                }
                 log.info("sent request to {} success={}", remoteId, requestSuccess);
             }
 
@@ -384,6 +403,14 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
     }
 
     private boolean sendResponse(ID remoteId, Response response) {
+        if (remoteId.equals(myId)) {
+            try {
+                receiveResponse(response);
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+            return true;
+        }
         try {
             Optional<Node> remote = tryGetRemoteOrRemoveInactive(remoteId);
             if (remote.isEmpty()) {
@@ -416,6 +443,9 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
     }
 
     private boolean isActiveElseTryRemove(ID remoteId) {
+        if (!hasRemote(remoteId)) {
+            return false;
+        }
         try {
             // poke node to see if it's still there
             remotes.get(remoteId).receivePoke();
@@ -439,7 +469,8 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
 
     // returns true if node with given remoteId is in remotes and is poke-able
     private boolean hasRemote(ID remoteId) {
-        for (ID id : remotes.keySet()) {
+        var copy = new HashSet<>(remotes.keySet());
+        for (ID id : copy) {
             if (id.equals(remoteId)) {
                 return true;
             }

@@ -6,7 +6,7 @@ P=""
 # read ID from flags
 while getopts i:a:p: flag
 do
-  case "${flag}" in
+  case ${flag} in
     i) ID=${OPTARG};;
     a) ADDR=${OPTARG};;
     p) P=${OPTARG};;
