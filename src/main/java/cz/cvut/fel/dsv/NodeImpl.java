@@ -28,7 +28,7 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
     private Registry myRegistry;
 
     private volatile Integer requestedVariable;
-    private Integer sharedVariable;
+    private volatile Integer sharedVariable;
 
     private int nMax;
     private Map<ID, Remote> remotes = new TreeMap<>();
@@ -83,26 +83,28 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
     }
 
     @Override
-    public synchronized int addRemote(String newNodeIp, int newNodePort) throws RemoteException {
+    public int addRemote(String newNodeIp, int newNodePort) throws RemoteException {
         // increase nMax and create new node ID
         nMax += 1;
         final var newNodeId = new ID(newNodeIp, newNodePort, nMax);
 
         // skip if known
-        if (hasRemote(newNodeId)) {
-            // reset nMax so we don't skip N
-            nMax -= 1;
-            log.info("node {} is already in the network", newNodeId);
-            return -1;
+        synchronized (remotes) {
+            if (hasRemote(newNodeId)) {
+                // reset nMax so we don't skip N
+                nMax -= 1;
+                log.info("node {} is already in the network", newNodeId);
+                return -1;
+            }
+
+            // locate node
+            var newNode = tryLocateRemoteNode(newNodeId);
+            if (newNode.isEmpty())
+                return -1;
+
+            // add new remote
+            remotes.put(newNodeId, new Remote(newNode.get(), false));
         }
-
-        // locate node
-        var newNode = tryLocateRemoteNode(newNodeId);
-        if (newNode.isEmpty())
-            return -1;
-
-        // add new remote
-        remotes.put(newNodeId, new Remote(newNode.get(), false));
 
         updateNetworkOnRemotes();
 
@@ -111,14 +113,16 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
     }
 
     @Override
-    public synchronized void removeRemote(ID nodeId) throws RemoteException {
-        if (!hasRemote(nodeId)) {
-            log.info("node is removed already");
-            return;
-        }
+    public void removeRemote(ID nodeId) throws RemoteException {
+        synchronized (this) {
+            if (!hasRemote(nodeId)) {
+                log.info("node is removed already");
+                return;
+            }
 
-        // remove node from remotes
-        remotes.remove(nodeId);
+            // remove node from remotes
+            remotes.remove(nodeId);
+        }
 
         updateNetworkOnRemotes();
 
@@ -140,7 +144,8 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         }
 
         // remove excess remotes that are not in updated list
-        for (ID myRemoteId : remotes.keySet()) {
+        var myRemoteIds = new HashSet<>(remotes.keySet());
+        for (ID myRemoteId : myRemoteIds) {
             if (updatedRemotes.contains(myRemoteId))
                 continue;
 
@@ -157,7 +162,7 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
             log.debug("receiving request takes {} ...", sleepTime);
             Thread.sleep(sleepTime);
         } catch (InterruptedException e) {
-            log.error("failed sleeping ...", e);
+            log.error("failed sleeping ...");
         }
 
         synchronized (this) {
@@ -179,32 +184,41 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
                 log.info("Received request from {}, put it in waiting line ...", request.getSenderId());
                 return;
             }
+        }
 
-            sendResponse(request.getSenderId(), new Response());
-            log.info("Received request from {}, replying instantly", request.getSenderId());
+        log.info("Received request from {}, replying instantly", request.getSenderId());
+        var success = sendResponse(request.getSenderId(), new Response());
+        if (!success) {
+            // remove inactive node
+            remotes.remove(request.getSenderId());
+            updateNetworkOnRemotes();
         }
     }
 
     @Override
-    public synchronized void receiveResponse(Response response) throws RemoteException {
-        responseCount++;
+    public void receiveResponse(Response response) throws RemoteException {
+        synchronized (this) {
+            responseCount++;
 
-        if (responseCount < remotes.size())
-            return;
+            log.debug("reponse count is {}", responseCount);
 
-        // received all responses needed to enter critical section
-        // CRITICAL SECTION
-        state = State.HELD;
+            if (responseCount < remotes.size())
+                return;
 
-        log.info("{} HELD and changing variable {} to {} ...", strclk(), sharedVariable, requestedVariable);
-        sharedVariable = requestedVariable;
+            // received all responses needed to enter critical section
+            // CRITICAL SECTION
+            state = State.HELD;
+
+            log.info("{} HELD and changing variable {} to {} ...", strclk(), sharedVariable, requestedVariable);
+            sharedVariable = requestedVariable;
+        }
 
         try {
             var sleepTime = Utils.getRandomLong(Config.CRITICAL_WAIT_MIN_MS, Config.CRITICAL_WAIT_MAX_MS);
             log.info("sleeping for {} ms", sleepTime);
             Thread.sleep(sleepTime);
         } catch (InterruptedException e) {
-            log.error("failed to sleep ...", e);
+            log.error("failed to sleep ...");
         }
 
         state = State.RELEASED;
@@ -225,6 +239,7 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
     @Override
     public synchronized void updateVariable(Integer payload) {
         sharedVariable = payload;
+        log.info("updated variable to {}", sharedVariable);
     }
 
     @Override
@@ -247,22 +262,21 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
                     }
                     // find any remote that can remove me
 
-                    synchronized (this) {
-                        var success = false;
-                        for (ID id : remotes.keySet()) {
-                            try {
-                                remotes.get(id).getNode().removeRemote(myId);
-                                success = true;
-                                break;
-                            } catch (RemoteException e) {
-                                log.error("failed to sign out via node {}", id, e);
-                            }
+                    var success = false;
+                    var remoteIds = new HashSet<>(remotes.keySet());
+                    for (ID id : remoteIds) {
+                        try {
+                            remotes.get(id).getNode().removeRemote(myId);
+                            success = true;
+                            break;
+                        } catch (RemoteException e) {
+                            log.error("failed to sign out via node {}", id);
                         }
-                        if (!success)
-                            log.error("all remotes failed to sign me out ..");
-
-                        remotes.clear();
                     }
+                    if (!success)
+                        log.error("all remotes failed to sign me out ..");
+
+                    remotes.clear();
 
                     continue;
                 case "login":
@@ -287,53 +301,65 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
                     break;
             }
 
+            if (state == State.REQUESTING || state == State.HELD) {
+                log.warn("can't request while requesting or while in CS...");
+                continue;
+            }
+
+            try {
+                requestedVariable = Integer.parseInt(line);
+            } catch (NumberFormatException e) {
+                log.error("failed to parse input string to int");
+                return;
+            }
+
+            // change state to wanted, request access to critical section
             synchronized (this) {
-                if (state == State.REQUESTING || state == State.HELD) {
-                    log.warn("can't request while requesting or while in CS...");
-                    continue;
-                }
-
-                try {
-                    requestedVariable = Integer.parseInt(line);
-                } catch (NumberFormatException e) {
-                    log.error("failed to parse input string to int", e);
-                    return;
-                }
-
-                // change state to wanted, request access to critical section
                 state = State.REQUESTING;
                 myClock = clockMax + 1;
+            }
 
-                log.info("{} WANTED and requesting access ...", strclk());
+            log.info("{} REQUESTING access ...", strclk());
 
-                responseCount = 0;
+            responseCount = 0;
 
-                for (ID remoteId : remotes.keySet()) {
-                    var success = sendRequest(remoteId, new Request(myClock, myId));
-                    if (success) {
-                        log.info("sent request to {}", remoteId);
-                        continue;
+            // need to copy ids, because sendRequest can remove id during the for loop
+            var remoteIds = new HashSet<>(remotes.keySet());
+            var it = remoteIds.iterator();
+            while (it.hasNext()) {
+                var remoteId = it.next();
+                var success = sendRequest(remoteId, new Request(myClock, myId));
+                if (!success) {
+                    // remove inactive node
+                    remotes.remove(remoteId);
+                    updateNetworkOnRemotes();
+
+                    // if no more remotes and last one was not success, respond to self to trigger
+                    // CS
+                    if (!it.hasNext()) {
+                        try {
+                            // send response to self as replacement for the remote node
+                            receiveResponse(new Response());
+                        } catch (RemoteException e) {
+                            log.error("failed to send request to self");
+                        }
+                        break;
                     }
-
-                    // request failed, respond to self
-                    try {
-                        receiveResponse(new Response());
-                    } catch (RemoteException e) {
-                        log.error("failed to receive self-response", e);
-                    }
+                } else {
+                    log.info("sent request to {}", remoteId);
                 }
+            }
 
-                // no remotes, respond to self to ender CS
-                // check happens here, because first receiveRequest needs to fail in order for
-                // the non-existent node
-                // to be removed
-                if (remotes.size() < 1) {
-                    log.info("no peers in the network, self-requesting CS ...");
-                    try {
-                        receiveResponse(new Response());
-                    } catch (RemoteException e) {
-                        log.error("can't receive self-response");
-                    }
+            // no remotes, respond to self to ender CS
+            // check happens here, because first receiveRequest needs to fail in order for
+            // the non-existent node
+            // to be removed
+            if (remotes.size() < 1) {
+                log.info("no peers in the network, self-requesting CS ...");
+                try {
+                    receiveResponse(new Response());
+                } catch (RemoteException e) {
+                    log.error("can't receive self-response");
                 }
             }
         }
@@ -355,48 +381,41 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         return builder.toString();
     }
 
-    private void updateNetworkOnRemotes() throws RemoteException {
+    private void updateNetworkOnRemotes() {
         for (ID remoteId : remotes.keySet()) {
             // copy remotes
-            var remoteIds = new HashSet<>(remotes.keySet());
+            var ids = new HashSet<>(remotes.keySet());
 
             // add self and remove remote (remote has different remotes than this node)
-            remoteIds.add(myId);
-            remoteIds.remove(remoteId);
+            ids.add(myId);
+            ids.remove(remoteId);
 
-            remotes.get(remoteId).getNode().updateRemotes(remoteIds);
+            try {
+                remotes.get(remoteId).getNode().updateRemotes(ids);
+            } catch (RemoteException e) {
+                log.error("can't update remotes for {}", remoteId);
+            }
         }
     }
 
     private boolean sendRequest(ID remoteId, Request request) {
         try {
             remotes.get(remoteId).getNode().receiveRequest(request);
+            return true;
         } catch (RemoteException e) {
-            log.error("failed to send request to node {}", remoteId, e);
-
-            // remove inactive node
-            remotes.remove(remoteId);
-
-            // send response to self as replacement for the remote node
-            sendResponse(myId, new Response());
-
-            return false;
+            log.error("failed to send request to node {}", remoteId);
         }
-        return true;
+        return false;
     }
 
     private boolean sendResponse(ID remoteId, Response response) {
         try {
             remotes.get(remoteId).getNode().receiveResponse(response);
+            return true;
         } catch (RemoteException e) {
-            log.error("failed to send response to node {}", remoteId, e);
-
-            // remove inactive node
-            remotes.remove(remoteId);
-
-            return false;
+            log.error("failed to send response to node {}", remoteId);
         }
-        return true;
+        return false;
     }
 
     private Optional<Node> tryLocateRemoteNode(ID id) {
@@ -404,13 +423,13 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
             final var remoteRegistry = LocateRegistry.getRegistry(id.getIp(), id.getPort());
             return Optional.of((Node) remoteRegistry.lookup(id.getName()));
         } catch (RemoteException | NotBoundException e) {
-            log.error("error contacting registry at {}", id.getName(), e);
+            log.error("error contacting registry at {}", id.getName());
         }
         return Optional.empty();
     }
 
     // returns true if node with given remoteId is in remotes and is poke-able
-    private synchronized boolean hasRemote(ID remoteId) {
+    private boolean hasRemote(ID remoteId) {
         for (ID id : remotes.keySet()) {
             if (id.equals(remoteId)) {
                 return true;
