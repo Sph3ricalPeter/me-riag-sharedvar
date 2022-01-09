@@ -106,6 +106,7 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
             remotes.put(newNodeId, new Remote(newNode.get(), false));
         }
 
+        remotes.get(newNodeId).getNode().updateVariable(sharedVariable);
         updateNetworkOnRemotes();
 
         log.info("added new node, new state is {}", this);
@@ -175,7 +176,7 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
 
             final var delay = isBusy && (isIncomingClockAhead || isClockSameAndReqNumHigher);
 
-            log.debug("delay = stateEqualsRequesting={} && (isReqClockAhead={} || isClockSameAndReqNumHigher={}",
+            log.debug("delay = isBusy={} && (isReqClockAhead={} || isClockSameAndReqNumHigher={}",
                     state.equals(State.REQUESTING), isIncomingClockAhead, isClockSameAndReqNumHigher);
 
             // delay response until not busy, response happens after critical section
@@ -310,7 +311,7 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
                 requestedVariable = Integer.parseInt(line);
             } catch (NumberFormatException e) {
                 log.error("failed to parse input string to int");
-                return;
+                continue;
             }
 
             // change state to wanted, request access to critical section
@@ -322,6 +323,20 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
             log.info("{} REQUESTING access ...", strclk());
 
             responseCount = 0;
+
+            // no remotes, respond to self to ender CS
+            // check happens here, because first receiveRequest needs to fail in order for
+            // the non-existent node
+            // to be removed
+            if (remotes.size() < 1) {
+                log.info("no peers in the network, self-requesting CS ...");
+                try {
+                    receiveResponse(new Response());
+                } catch (RemoteException e) {
+                    log.error("can't receive self-response");
+                }
+                continue;
+            }
 
             // need to copy ids, because sendRequest can remove id during the for loop
             var remoteIds = new HashSet<>(remotes.keySet());
@@ -349,19 +364,6 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
                     log.info("sent request to {}", remoteId);
                 }
             }
-
-            // no remotes, respond to self to ender CS
-            // check happens here, because first receiveRequest needs to fail in order for
-            // the non-existent node
-            // to be removed
-            if (remotes.size() < 1) {
-                log.info("no peers in the network, self-requesting CS ...");
-                try {
-                    receiveResponse(new Response());
-                } catch (RemoteException e) {
-                    log.error("can't receive self-response");
-                }
-            }
         }
     }
 
@@ -371,12 +373,12 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
 
         // print in format: 192.168.56.101:2010 - 2 peers: [192.168.56.102:2010,
         // 192.168.56.103:2013]
-        builder.append(String.format("%s %s | var=%d | %d peers: {", strclk(), myId, sharedVariable, remotes.size()));
+        builder.append(String.format("\n+++++++++\n%s %s | var=%d\n%d peers: {\n", strclk(), myId, sharedVariable, remotes.size()));
         for (Iterator<ID> it = remotes.keySet().iterator(); it.hasNext();) {
             ID remoteId = it.next();
-            builder.append(String.format(it.hasNext() ? "%s, " : "%s", remoteId));
+            builder.append(String.format(it.hasNext() ? "* %s,\n" : "%s\n", remoteId));
         }
-        builder.append("}");
+        builder.append("}\n+++++++++");
 
         return builder.toString();
     }
@@ -440,6 +442,6 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
     }
 
     private String strclk() {
-        return String.format("[clK:%s", myClock);
+        return String.format("[clK:%s]", myClock);
     }
 }
