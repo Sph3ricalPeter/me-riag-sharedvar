@@ -11,7 +11,7 @@ This project is an implementation of the Ricart-Agrawala mutual exclusion algori
 ### Installation & How to run
 ```shell
 # create artifact using Maven
-mvn install -DskipTests=true
+mvn install
 
 # move to build directory
 cd target
@@ -31,9 +31,9 @@ cd target
 # start N1 on M1 with ip 192.168.56.101:2010
 ./start.sh 
 # start N2 on M2 with ip 192.168.56.102:2010, use N1 as gateway
-./start.sh -i 2 -a 192.168.56.101 -p 2010 
+./start.sh -i 2 -g 192.168.56.101 
 # start N3 on M3 with ip 192.168.56.103:2010, use N2 as gateway
-./start.sh -i 3 -a 192.168.56.102 -p 2010
+./start.sh -i 3 -g 192.168.56.102
 ```
 
 ### Usage
