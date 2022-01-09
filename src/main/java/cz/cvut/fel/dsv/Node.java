@@ -7,11 +7,9 @@ import java.util.HashSet;
 
 public interface Node extends Remote, Serializable {
 
-    void receivePoke() throws RemoteException;
+    int addRemote(String ip, int port) throws RemoteException;
 
-    int addNode(String ip, int port) throws RemoteException;
-
-    void removeNode(ID id) throws RemoteException;
+    void removeRemote(ID id) throws RemoteException;
 
     void updateRemotes(HashSet<ID> remotes) throws RemoteException;
 
