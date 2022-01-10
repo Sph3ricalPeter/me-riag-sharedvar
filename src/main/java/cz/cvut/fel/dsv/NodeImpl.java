@@ -376,7 +376,7 @@ public class NodeImpl extends UnicastRemoteObject implements Node, Runnable {
         builder.append(String.format("\n+++++++++\n%s %s | var=%d\n%d peers: {\n", strclk(), myId, sharedVariable, remotes.size()));
         for (Iterator<ID> it = remotes.keySet().iterator(); it.hasNext();) {
             ID remoteId = it.next();
-            builder.append(String.format(it.hasNext() ? "* %s,\n" : "%s\n", remoteId));
+            builder.append(String.format(it.hasNext() ? "* %s,\n" : "* %s\n", remoteId));
         }
         builder.append("}\n+++++++++");
 
